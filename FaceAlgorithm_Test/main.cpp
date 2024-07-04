@@ -5,16 +5,16 @@
 #include "opencv2/opencv.hpp"
 #include <chrono>
 
-#define face_detect                       1           //人脸检测
-#define yolov5face_detect				  1           //yolov5face 人脸检测
-#define yolov7face_detect				  1           //yolov7face 人脸检测
+#define face_detect                       0           //人脸检测
+#define yolov5face_detect				  0           //yolov5face 人脸检测
+#define yolov7face_detect				  0           //yolov7face 人脸检测
 #define yolov8face_detect				  1           //yolov8face 人脸检测
-#define face_recognition                  1           //人脸识别（人脸特征提取）+相似度计算
-#define face_detect_tracker               1           //人脸检测跟踪
+#define face_recognition                  0           //人脸识别（人脸特征提取）+相似度计算
+#define face_detect_tracker               0           //人脸检测跟踪
 #define face_detect_aligner_recognitiion  0           //人脸检测——矫正——识别(人脸特征提取)
-#define mask_recognition                  1           //口罩识别
-#define gender_age_recognition            1           //性别年龄识别
-#define silnet_face_anti_spoofing         1           //静默活体检测
+#define mask_recognition                  0           //口罩识别
+#define gender_age_recognition            0           //性别年龄识别
+#define silnet_face_anti_spoofing         0           //静默活体检测
 #define show							  1			  //显示
 
 /*-----------------------------------------

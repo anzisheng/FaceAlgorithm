@@ -5,3 +5,4 @@ build/
 *.wts
 lib/
 *.so
+face_alignment/lib/*.so
