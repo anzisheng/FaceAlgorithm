@@ -1,0 +1,5 @@
+build/
+*.jpg
+*.onnx
+*.pt
+*.wts

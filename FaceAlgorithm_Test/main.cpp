@@ -44,7 +44,7 @@ struct FaceGroup
 int main(int argc, char** argv) 
 {
 	double sumtime=0.0;
-	std::string data_model_path="/home/pcb/FaceRecognition_Linux_Release/FaceAlgorithm/";
+	std::string data_model_path="/home/txry/workspace/FaceAlgorithm/";
 	/**********算法初始化**************************/
 	Config config;
 	

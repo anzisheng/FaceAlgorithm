@@ -2,15 +2,22 @@
 cmake_minimum_required (VERSION 2.6)
 
 project (FaceAlgorithmDemo)
+set(CMAKE_BUILD_TYPE Debug)
 
 # tensorrt 目录
+
 # tensorrt path
 if (CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64")
-    set(TensorRT_INCLUDE "/usr/include/aarch64-linux-gnu" CACHE INTERNAL "TensorRT Library include location")
-    set(TensorRT_LIB "/usr/lib/aarch64-linux-gnu" CACHE INTERNAL "TensorRT Library lib location")
+    message("hello")
+    #set(TensorRT_INCLUDE "/usr/include/aarch64-linux-gnu" CACHE INTERNAL "TensorRT Library include location")
+    set(TensorRT_INCLUDE "//home/txry/workspace/TensorRT-8.5.3.1/targets/aarch64-linux-gnu/include" CACHE INTERNAL "TensorRT Library include location")
+
+    #set(TensorRT_LIB "/usr/lib/aarch64-linux-gnu" CACHE INTERNAL "TensorRT Library lib location")
+    set(TensorRT_LIB "/home/txry/workspace/TensorRT-8.5.3.1/targets/aarch64-linux-gnu/lib" CACHE INTERNAL "TensorRT Library lib location")
 else()
-    set(TensorRT_INCLUDE "/home/pcb/TensorRT-8.2.5.1/targets/x86_64-linux-gnu/include" CACHE INTERNAL "TensorRT Library include location")
-    set(TensorRT_LIB "/home/pcb/TensorRT-8.2.5.1/targets/x86_64-linux-gnu/lib" CACHE INTERNAL "TensorRT Library lib location")
+    message("world")
+    set(TensorRT_INCLUDE "/home/txry/workspace/TensorRT-8.5.3.1/targets/aarch64-linux-gnu/include" CACHE INTERNAL "TensorRT Library include location")
+    set(TensorRT_LIB "/home/txry/workspace/TensorRT-8.5.3.1/targets/aarch64-linux-gnu/lib" CACHE INTERNAL "TensorRT Library lib location")
 endif()
 
 #添加子目录
